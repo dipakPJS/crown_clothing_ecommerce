@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Directory } from "./components/directory/directory.component";
 
  const categories = [
@@ -34,6 +35,8 @@ function App() {
   return (
    <>
    <Directory categories={categories}/>
+   <br/>
+   <Link to="/about">About</Link>
    </>
   );
 }

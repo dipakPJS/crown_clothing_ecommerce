@@ -1,4 +1,5 @@
- import { CategoryItem } from "../category-item/category-item.component";
+ 
+import { CategoryItem } from "../category-item/category-item.component";
  import "./directory.styles.scss";
 
 
@@ -9,6 +10,7 @@
         {categories.map((category) => {
           return <CategoryItem key={category.id} category={category} />;
         })}
+       
       </div>
     )
   }
