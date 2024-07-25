@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import {Crown} from "../../assets/crown.jsx"
 import "./navigation.styles.scss"
 
@@ -7,12 +7,12 @@ const Navigation = () => {
   return (
     <Fragment>
       <div className="navigation">
-        <Link className="logo-container" to="/" >
+        <NavLink className="logo-container" to="/" >
       <Crown className = "logo" />
-        </Link>
+        </NavLink>
         <div className="nav-links-container">
-          <Link className="nav-link" to="/shop" >Shop</Link>
-          <Link className="nav-link" to="/sign-in" >Sign In</Link>
+          <NavLink className="nav-link" to="/shop" >Shop</NavLink>
+          <NavLink className="nav-link" to="/sign-in" >Sign In</NavLink>
         </div>
       </div>
       <Outlet />
